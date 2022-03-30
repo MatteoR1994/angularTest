@@ -2,4 +2,8 @@
 
 <p *ngIf="user2">{{user2.name}}</p>
 
+<button (click)="saveLocalData()">salva dato</button>
+
+<app-local-storage-data [userChanged]="userChanged"></app-local-storage-data>
+
 <router-outlet></router-outlet>
